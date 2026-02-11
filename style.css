@@ -1,0 +1,60 @@
+
+
+/* Mobile Phones on landscape mode (phones, 600px and down) */
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+  .hero {
+    display: block;
+    height: fit-content;
+    margin-top: 20px;
+  }
+  .extra_hero{
+    position: relative;
+  }
+  .body{
+    height: fit-content;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav_links, .action_buttons{
+        display: none;
+    }
+    .hero{
+        margin-left: 57px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .test{
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+    }
+
+    .search{
+        display: none;
+    }
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .test{
+        width: 70%;
+    }
+    .nav_links{
+        display: flex;
+    }
+    .action_buttons{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+
+
+}

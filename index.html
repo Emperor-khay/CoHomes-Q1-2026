@@ -10,14 +10,14 @@
 <body>
     
     <div 
-    class="bg-[url('./images/hero_bg.png')] h-[80vh] bg-no-repeat bg-cover relative" 
+    class="bg-[url('./images/hero_bg.png')] h-[80vh] bg-no-repeat bg-cover relative body" 
     >
         <div class="absolute inset-[0px] bg-black opacity-[0.5] z-[5]">
         </div>
 
         <div class="relative z-[10]">
 
-            <nav class="flex items-center pt-4 justify-around">
+            <nav class="flex items-center pt-4 justify-between px-5">
     
                 <!-- Logo -->
                 <div class="h-[76px] w-[75px]">
@@ -26,23 +26,28 @@
                 
                 <!-- Nav links -->
                  <!-- Method 1 -->
-                 <div class="text-[16px] font-bold text-white flex gap-[26px]">
-                    <span><a href="">Home</a></span>
-                    <span><a href="">About</a></span>
-                    <span><a href="">Services</a></span>
-                    <span><a href="">Contact</a></span>
-                    <span><a href="">FAQ</a></span>
+                 <div class="text-[16px] font-bold text-white flex gap-[26px] nav_links hidden">
+                    <p><a href="">Home</a></p>
+                    <p><a href="">About</a></p>
+                    <p><a href="">Services</a></p>
+                    <p><a href="">Contact</a></p>
+                    <p><a href="">FAQ</a></p>
                  </div>
 
                  <!-- Action Buttons -->
-                  <div class="text-white">
+                  <div class="text-white action_buttons hidden">
                     <a href="" class="py-[10px] px-[33px] rounded-[5px] border-[2px] border border-white">Login</a>
                     <a href="" class="py-[10px] px-[33px] rounded-[5px] bg-[#D32323]">Register</a>
+                  </div>
+
+                  <!-- Mobile Menu -->
+                  <div class="text-white bg-[#D32323] p-3 rounded-md menu">
+                    <button>Menu</button>
                   </div>
     
             </nav>
 
-            <div class="flex h-[50vh] items-center ml-[57px]">
+            <div class="flex h-[50vh] items-center mx-[10px] hero">
                 <section class="font-bold text-[#FFFFFF]">
                     <p class="text-[40px]">Elegant Villa In <br> Wuse 2 </p>
                     <span class="text-[18px]">3 BD | 3 BA </span>
@@ -55,7 +60,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col justify-center w-full absolute z-[10] bottom-[-100px]">
+        <div class="flex flex-col justify-center w-full absolute z-[10] bottom-[-100px] extra_hero">
              <!-- using fixed width and height -->
             <div class="flex justify-center font-bold text-[18px]">
                 <p class="w-[160px] h-[70px] bg-[#F6F8FA] flex items-center justify-center">Rent</p>
@@ -63,13 +68,9 @@
                 <p class="w-[160px] h-[70px] bg-[#F6F8FA] flex items-center justify-center">Roommate</p>
             </div>
     
-            <!-- using padding -->
-            <!-- <div class="flex bg-[yellow] justify-center">
-                <p class="pt-[28px] pb-[20px] px-[20px] bg-[green]">Rent</p>
-                <p class="pt-[28px] pb-[20px] px-[20px] bg-[red]">Buy</p>
-                <p class="pt-[28px] pb-[20px] px-[20px] bg-[blue]">Roommate</p>
-            </div> -->
-            <div class="text-[18px] flex justify-evenly pt-[39px] pb-[31px] shadow-lg border-[0.5px] border-[#E0E0E0] rounded-[10px] bg-[#ffffff] w-[70%] mx-auto">
+           
+
+            <div class="text-[18px] flex justify-evenly pt-[39px] pb-[31px] shadow-lg border-[0.5px] border-[#E0E0E0] rounded-[10px] bg-[#ffffff] mx-[10px] test hidden">
                 <div>
                     <span class="flex font-semibold items-center gap-[10px]">Location <img src="./images/icons/down_arrow.svg" alt="" class="w-[12px] h-[7px] "></span>
                     <span class="opacity-[70%]">Abuja</span>
@@ -98,6 +99,15 @@
                 <span class="bg-[#D32323] pt-[21px] px-[20px] pb-[18px] rounded-[5px]">
                     <img src="./images/icons/search_icon.svg" class="w-[18px] h-[18px]" alt="">
                 </span>
+            </div>
+
+            <div>
+                <div class="bg-[#D32323] mt-[10px] w-[90%] mx-auto pt-[21px] px-[20px] pb-[18px] rounded-[5px] flex gap-2 items-center text-white justify-center search">
+                    <img src="./images/icons/search_icon.svg" class="w-[18px] h-[18px]" alt="">
+                    <span>
+                        Search up a Property
+                    </span>
+                </div>
             </div>
         </div>
     </div>
