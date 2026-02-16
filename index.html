@@ -2,14 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>CoHomes</title>
+
+    <style>
+        
+        /* Mobile Phones on landscape mode (phones, 600px and down) */
+        @media only screen and (max-width: 992px) and (orientation: landscape) {
+        .hero {
+            display: block;
+            height: fit-content;
+            margin-top: 20px;
+        }
+        .extra_hero{
+            position: relative;
+        }
+        .body{
+            height: fit-content;
+        }
+        }
+
+    </style>
 </head>
 <body>
     
-    <div 
+    <!-- Hero Section -->
+    <section 
     class="bg-[url('./images/hero_bg.png')] h-[80vh] bg-no-repeat bg-cover relative body" 
     >
         <div class="absolute inset-[0px] bg-black opacity-[0.5] z-[5]">
@@ -26,7 +46,7 @@
                 
                 <!-- Nav links -->
                  <!-- Method 1 -->
-                 <div class="text-[16px] font-bold text-white flex gap-[26px] nav_links hidden">
+                 <div class="text-[16px] font-bold text-white lg:flex gap-[26px] nav_links hidden">
                     <p><a href="">Home</a></p>
                     <p><a href="">About</a></p>
                     <p><a href="">Services</a></p>
@@ -35,19 +55,19 @@
                  </div>
 
                  <!-- Action Buttons -->
-                  <div class="text-white action_buttons hidden">
+                  <div class="text-white lg:block action_buttons hidden">
                     <a href="" class="py-[10px] px-[33px] rounded-[5px] border-[2px] border border-white">Login</a>
                     <a href="" class="py-[10px] px-[33px] rounded-[5px] bg-[#D32323]">Register</a>
                   </div>
 
                   <!-- Mobile Menu -->
-                  <div class="text-white bg-[#D32323] p-3 rounded-md menu">
+                  <div class="text-white bg-[#D32323] p-3 rounded-md lg:hidden menu">
                     <button>Menu</button>
                   </div>
     
             </nav>
 
-            <div class="flex h-[50vh] items-center mx-[10px] hero">
+            <div class="flex h-[50vh] items-center mx-[10px] sm:ml-[57px] hero">
                 <section class="font-bold text-[#FFFFFF]">
                     <p class="text-[40px]">Elegant Villa In <br> Wuse 2 </p>
                     <span class="text-[18px]">3 BD | 3 BA </span>
@@ -70,7 +90,7 @@
     
            
 
-            <div class="text-[18px] flex justify-evenly pt-[39px] pb-[31px] shadow-lg border-[0.5px] border-[#E0E0E0] rounded-[10px] bg-[#ffffff] mx-[10px] test hidden">
+            <div class="text-[18px] flex justify-evenly pt-[39px] pb-[31px] shadow-lg border-[0.5px] border-[#E0E0E0] rounded-[10px] bg-[#ffffff] mx-[10px] test lg:w-[70%] md:mx-auto md:flex md:w-[90%] hidden">
                 <div>
                     <span class="flex font-semibold items-center gap-[10px]">Location <img src="./images/icons/down_arrow.svg" alt="" class="w-[12px] h-[7px] "></span>
                     <span class="opacity-[70%]">Abuja</span>
@@ -102,7 +122,7 @@
             </div>
 
             <div>
-                <div class="bg-[#D32323] mt-[10px] w-[90%] mx-auto pt-[21px] px-[20px] pb-[18px] rounded-[5px] flex gap-2 items-center text-white justify-center search">
+                <div class="bg-[#D32323] mt-[10px] w-[90%] mx-auto pt-[21px] px-[20px] pb-[18px] rounded-[5px] flex gap-2 items-center text-white justify-center md:hidden search">
                     <img src="./images/icons/search_icon.svg" class="w-[18px] h-[18px]" alt="">
                     <span>
                         Search up a Property
@@ -110,8 +130,68 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Property Listings Section -->
+    <section class="mt-[194px] font-black text-[35px] mx-[10px]">
+        <div>
+            <h1 class="text-center">Searching for a property?</h1>
+            <p class="font-medium text-[16px] text-center p-3">CoHomes is committed to helping you find your dream home </p>
+            <div class="bg-[#D32323] h-[3px] w-[55px] mx-auto m-3"></div>
+            <hr class="m-5 border-[#D32323]  w-[55px] mx-auto border-[2px] ">
+        </div>
+
+        <div class="space-y-[15px] sm:space-y-0 lg:flex gap-[15px] lg:m-3">
+            <div class="lg:w-[50%] lg:space-y-[15px]">
+                <!-- selfcon and flat combined -->
+                <div class="sm:flex sm:gap-[13px]">
+                    <!-- self contain -->
+                    <div class="sm:w-[50%] relative min-h-[226px] flex items-center justify-center bg-[url('./images/self-contain.png')] bg-no-repeat bg-cover my-[10px] sm:my-0">
+                        <div class="absolute top-[0] left-[0] right-[0] bottom-[0] bg-black opacity-[0.5] z-[5]">
+                        </div>
+                        <div class="text-[white] relative z-[10] text-center w-full space-y-[13px]">
+                            <p class="font-black text-[24px]">Self-Contain</p>
+                            <p class="font-bold text-[16px] bg-[#D32323] w-[120px] mx-auto">7 listings</p>
+                        </div>
+                    </div>
+    
+                    <!-- flat -->
+                    <div class="sm:w-[50%] relative min-h-[226px] flex items-center justify-center bg-[url('./images/flat.png')] bg-no-repeat bg-cover my-[10px] sm:my-0">
+                        <div class="absolute top-[0] left-[0] right-[0] bottom-[0] bg-black opacity-[0.5] z-[5]">
+                        </div>
+                        <div class="text-[white] relative z-[10] text-center w-full space-y-[13px]">
+                            <p class="font-black text-[24px]">Flat</p>
+                            <p class="font-bold text-[16px] bg-[#D32323] w-[120px] mx-auto">2 listings</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Houses -->
+                <div class="relative min-h-[226px] flex items-center justify-center bg-[url('./images/houses.png')] bg-no-repeat bg-cover my-[10px] lg:my-0">
+                    <div class="absolute top-[0] left-[0] right-[0] bottom-[0] bg-black opacity-[0.5] z-[5]">
+                    </div>
+                    <div class="text-[white] relative z-[10] text-center w-full space-y-[13px]">
+                        <p class="font-black text-[24px]">Houses</p>
+                        <p class="font-bold text-[16px] bg-[#D32323] w-[120px] mx-auto">5 listings</p>
+                    </div>
+                </div>
+            </div>
 
 
+            <!-- Apartments -->
+            <div class="lg:w-[50%] relative min-h-[226px] flex items-center justify-center bg-[url('./images/apartment.png')] bg-no-repeat bg-cover my-[10px] lg:my-0">
+                <div class="absolute top-[0] left-[0] right-[0] bottom-[0] bg-black opacity-[0.5] z-[5]">
+                </div>
+                <div class="text-[white] relative z-[10] text-center w-full space-y-[13px]">
+                    <p class="font-black text-[24px]">Apartment</p>
+                    <p class="font-bold text-[16px] bg-[#D32323] w-[120px] mx-auto">2 listings</p>
+                </div>
+            </div>
+        
+           
+
+        </div>
+    </section>
+   
 </body>
 </html>
