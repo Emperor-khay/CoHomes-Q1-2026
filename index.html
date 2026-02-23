@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <!-- <link rel="stylesheet" href="./style.css"> -->
+     <link rel="stylesheet" href="./src/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     
     <title>CoHomes</title>
 
     <style>
@@ -30,9 +31,9 @@
     
     <!-- Hero Section -->
     <section 
-    class="bg-[url('./images/hero_bg.png')] h-[80vh] bg-no-repeat bg-cover relative body" 
+    class=" h-[80vh] bg-no-repeat bg-cover relative body" style="background-image: url('./images/hero_bg.png');"
     >
-        <div class="absolute inset-[0px] bg-black opacity-[0.5] z-[5]">
+        <div class="absolute inset-0 bg-black opacity-[0.5] z-[5]">
         </div>
 
         <div class="relative z-[10]">
@@ -67,14 +68,12 @@
     
             </nav>
 
-            <div class="flex h-[50vh] items-center mx-[10px] sm:ml-[57px] hero">
+            <div class="flex h-[50vh] items-center mx-[10px] sm:ml-[57px]">
                 <section class="font-bold text-[#FFFFFF]">
-                    <p class="text-[40px]">Elegant Villa In <br> Wuse 2 </p>
+                    <p class="text-[40px]" id="hero">Elegant Villa In <br> Wuse 2 </p>
                     <span class="text-[18px]">3 BD | 3 BA </span>
-                    <div class="flex gap-[21px] mt-[25px]">
-                        <img src="./images/Hero_img_1.png" alt="">
-                        <img src="./images/Hero_img_2.png" alt="">
-                        <img src="./images/Hero_img_3.png" alt="">
+                    <div class="flex gap-[21px] mt-[25px] img_container">
+                        
                     </div>
                 </section>
             </div>
@@ -146,7 +145,7 @@
                 <!-- selfcon and flat combined -->
                 <div class="sm:flex sm:gap-[13px]">
                     <!-- self contain -->
-                    <div class="sm:w-[50%] relative min-h-[226px] flex items-center justify-center bg-[url('./images/self-contain.png')] bg-no-repeat bg-cover my-[10px] sm:my-0">
+                    <div class="sm:w-[50%] relative min-h-[226px] flex items-center justify-center bg-no-repeat bg-cover my-[10px] sm:my-0" style="background-image: url('./images/self-contain.png');">
                         <div class="absolute top-[0] left-[0] right-[0] bottom-[0] bg-black opacity-[0.5] z-[5]">
                         </div>
                         <div class="text-[white] relative z-[10] text-center w-full space-y-[13px]">
@@ -156,7 +155,7 @@
                     </div>
     
                     <!-- flat -->
-                    <div class="sm:w-[50%] relative min-h-[226px] flex items-center justify-center bg-[url('./images/flat.png')] bg-no-repeat bg-cover my-[10px] sm:my-0">
+                    <div class="sm:w-[50%] relative min-h-[226px] flex items-center justify-center bg-no-repeat bg-cover my-[10px] sm:my-0" style="background-image: url('./images/flat.png');">
                         <div class="absolute top-[0] left-[0] right-[0] bottom-[0] bg-black opacity-[0.5] z-[5]">
                         </div>
                         <div class="text-[white] relative z-[10] text-center w-full space-y-[13px]">
@@ -167,7 +166,7 @@
                 </div>
 
                 <!-- Houses -->
-                <div class="relative min-h-[226px] flex items-center justify-center bg-[url('./images/houses.png')] bg-no-repeat bg-cover my-[10px] lg:my-0">
+                <div class="relative min-h-[226px] flex items-center justify-center bg-no-repeat bg-cover my-[10px] lg:my-0" style="background-image: url('./images/houses.png');">
                     <div class="absolute top-[0] left-[0] right-[0] bottom-[0] bg-black opacity-[0.5] z-[5]">
                     </div>
                     <div class="text-[white] relative z-[10] text-center w-full space-y-[13px]">
@@ -179,7 +178,7 @@
 
 
             <!-- Apartments -->
-            <div class="lg:w-[50%] relative min-h-[226px] flex items-center justify-center bg-[url('./images/apartment.png')] bg-no-repeat bg-cover my-[10px] lg:my-0">
+            <div class="lg:w-[50%] relative min-h-[226px] flex items-center justify-center bg-no-repeat bg-cover my-[10px] lg:my-0" style="background-image: url('./images/apartment.png');">
                 <div class="absolute top-[0] left-[0] right-[0] bottom-[0] bg-black opacity-[0.5] z-[5]">
                 </div>
                 <div class="text-[white] relative z-[10] text-center w-full space-y-[13px]">
@@ -193,5 +192,8 @@
         </div>
     </section>
    
+    <script src="./intro.js">
+        
+    </script>
 </body>
 </html>
