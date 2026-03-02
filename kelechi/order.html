@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1> 
+<h2>The toString() Method</h2>
+
+<p>The toString() method returns the elements of an array as a comma separated string:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [
+    even = [2, 4, 6, 8],
+    odd = [1, 3, 5, 7]
+];
+
+let myList = numbers;
+
+// document.getElementById("demo").innerHTML = myList; 
+
+for(i = 0; i < numbers.length; i++)
+{
+//   document.getElementById("demo").innerHTML += "<p> " + numbers[i] + " </p>";
+  document.getElementById("demo").innerHTML += `<p> ${numbers.at(i)} </p>`;
+}
+
+</script>
+
+</body>
+</html>

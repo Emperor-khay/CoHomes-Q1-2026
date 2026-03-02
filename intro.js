@@ -1,6 +1,7 @@
 let site_name = "W3Schools";
 let site_status = "active";
 
+
 let hero_text = document.querySelector("#hero");
 hero_text.innerHTML = "Welcome to CoHomes!";
 hero_text.style.color = "red";
@@ -72,7 +73,14 @@ fullName = `${firstName} Barry ${lastName}`;
 // window.alert(fullName);
 
 // conatenation using plus sign and quotation marks
-firstName = "John";
+let firstName = "John";
 lastName = "Doe";
 fullName = firstName + " Barry " + lastName;
 // window.alert(fullName);  
+
+function test(a){
+    console.log(a);
+    
+}    
+
+test("Lawrence");
