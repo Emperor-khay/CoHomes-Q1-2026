@@ -5,11 +5,15 @@
     <!-- <link rel="stylesheet" href="./style.css"> -->
      <link rel="stylesheet" href="./src/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
+
+    <!-- Lato fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
     <title>CoHomes</title>
 
     <style>
-        
         /* Mobile Phones on landscape mode (phones, 600px and down) */
         @media only screen and (max-width: 992px) and (orientation: landscape) {
         .hero {
@@ -27,8 +31,27 @@
 
     </style>
 </head>
-<body>
+<body class="relative">
     
+    <nav class="hidden" id="mobile-nav">
+
+        <!-- Mobile Nav Overlay -->
+        <div class="lg:hidden fixed inset-0 bg-black opacity-[0.5] z-[15]">
+        </div>
+        
+        <!-- Mobile Nav -->
+        <div class="fixed p-5 pt-20 h-[100vh] w-[300px] sm:w-[50%] md:w-[400px] flex flex-col gap-[15px] justify-self-end z-20 bg-[#ffffff] lg:hidden">
+            <button onclick="ToggleNav()" class="absolute rounded-full top-[10px] left-0 shadow-lg p-2 bg-white z-20 text-3xl font-bold">X</button>
+            <div class="p-5 bg-[#D32323] text-white rounded-md">Home</div>
+            <div class="p-5 bg-gray-100 rounded-md">About</div>
+            <div class="p-5 bg-gray-100 rounded-md">Services</div>
+            <div class="p-5 bg-gray-100 rounded-md">Contact</div>
+            <div class="p-5 bg-gray-100 rounded-md">FAQ</div>
+            <div class="p-5 bg-gray-100 rounded-md">login</div>
+            <div class="p-5 bg-gray-100 rounded-md">Register</div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section 
     class=" h-[80vh] bg-no-repeat bg-cover relative body" style="background-image: url('./images/hero_bg.png');"
@@ -62,9 +85,9 @@
                   </div>
 
                   <!-- Mobile Menu -->
-                  <div class="text-white bg-[#D32323] p-3 rounded-md lg:hidden menu">
-                    <button>Menu</button>
-                  </div>
+                  <button onclick="ToggleNav()" class="text-white bg-[#D32323] p-3 rounded-md lg:hidden menu">
+                    <span>Menu</span>
+                  </button>
     
             </nav>
 
@@ -122,7 +145,11 @@
 
             <div>
                 <div class="bg-[#D32323] mt-[10px] w-[90%] mx-auto pt-[21px] px-[20px] pb-[18px] rounded-[5px] flex gap-2 items-center text-white justify-center md:hidden search">
-                    <img src="./images/icons/search_icon.svg" class="w-[18px] h-[18px]" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[black]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+
+                    <!-- <img src="./images/icons/search_icon.svg" class="w-[18px] h-[18px]" alt=""> -->
                     <span>
                         Search up a Property
                     </span>
@@ -192,8 +219,8 @@
         </div>
     </section>
    
-    <script src="./intro.js">
-        
-    </script>
+    <!-- <script src="./intro.js">
+    </script> -->
+    <script src="./index.js"></script> 
 </body>
 </html>
