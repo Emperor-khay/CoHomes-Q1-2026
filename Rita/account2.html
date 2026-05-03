@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/output.css">
-    <title>Document</title>
+    <title>Account 2</title>
 </head>
-<body>
+<body class="relative">
+     <nav class="hidden" id="topNav">
+
+        <div class="lg:hidden fixed inset-0 bg-black opacity-[0.5] z-10"></div>
+
+        <div>
+            <div class="fixed p-5 pt-20 h-[100vh] w-[300px] sm:w-[50%] md:w-[400px] flex flex-col gap-[15px] justify-self-end z-15 bg-[#ffffff] lg:hidden">
+                <button onclick="Nav()" class="absolute rounded-full top-[10px] left-0 shadow-lg p-2 bg-white z-15 text-3xl font-bold">X</button>
+                 <a class="p-5 bg-[#D32323] text-white rounded-md" href="">Home</a>
+                 <a class="p-5 bg-gray-100 rounded-md" href="">Properties</a>
+                 <a class="p-5 bg-gray-100 rounded-md" href="">Find Roommate</a>
+                 <a class="p-5 bg-gray-100 rounded-md" href="">Explore</a>
+                 <a class="p-5 bg-gray-100 rounded-md" href="">Blog</a>  
+            </div>
+
+        </div>
+    
+    </nav>
      <div class="bg-[#D32323] z-1 h-[100px] w-[100%] relative bg-cover bg-no-repeat">
         <div class="relative z-3 flex px-[10px] pb-[20px] justify-between">
             <div class="w-[100px] text-center py-[10px]">
@@ -32,25 +49,254 @@
                  <a class="pt-1 px-7 pb-2 border rounded-[5px]" href="">Login</a>
                  <a class="pt-1 px-7 pb-2 border rounded-[5px] bg-[#A30000]" href="">Register</a>
             </div>
-
-            <button
-            class=" px-5 py-1 bg-red-700 font-Lato font-semibold text-[16px] text-white shadow-lg lg:hidden rounded-[5px] lg:hidden butt1">
-               Menu
+            <button onclick="Nav()" class="h-[36px] my-[16px] bg-red-700 rounded-[5px] lg:hidden">
+               <a class="pt-3 px-7 pb-4 border-solid font-semibold text-white" href="#">Menu</a>
             </button>
-
+           
+   
         </div>
     </div>
     <div class="bg-[#ffffff] h-[60px] border-solid border border-[#C4C4C4]">
-        <div class="flex text-[18px] px-[58px] font-semibold gap-[30px] py-[16px]">
-             <a href="" class="text-[#D32323]">Account</a>
-             <a href="" class="hidden lg:inline">My Listings</a>
-             <a href="" class="hidden lg:inline">Saved Properties</a>
-             <a href="" class="hidden lg:inline">Add Property</a>
-             <a href="" class="hidden lg:inline">Account Settings</a>  
+        <div class="flex text-[18px] px-[58px] font-semibold gap-[30px] hidden lg:flex">
+             <a href="" class="pt-[16px] pb-3 hidden lg:inline">Account</a>
+             <a href="" class="pt-[16px] hidden lg:inline">My Listings</a>
+             <a href="" class="pt-[16px] hidden lg:inline">Saved Properties</a>
+             <a href="" class="pt-[16px] hidden lg:inline">Add Property</a>
+             <div class="flex flex-col gap-3">
+                  <a href="" class="pt-[16px] text-[#D32323]">Account Settings</a>  
+                  <div class="bg-[#D32323] w-[130px] rounded-[10px] h-[3px] bg-cover bg-no-repeat"></div>
+             </div>
+             
         </div>
-        <div
-        class="bg-red-700 w-[60px] mx-[58px] rounded-[10px] h-[3px] bg-cover bg-no-repeat"
-        ></div>
+        <select class="lg:hidden text-[18px] px-[58px] font-semibold mt-[16px] bg-white border-none" onchange="window.location.href = this.value;">
+            <option value="C:\Users\Chidera\Documents\PRODUCT\Cohomes\Rita\account1.html">Account</option>
+            <option value="">My Listings</option>
+            <option value="">Saved Properties</option>
+            <option value="">Add Property</option>
+            <option value="C:\Users\Chidera\Documents\PRODUCT\Cohomes\Rita\account2.html" selected>Account Settings</option>
+        </select>
+     
     </div>
+    <div class="bg-[#F6F8FA80] bg-cover p-10 bg-no-repeat w-[100%] min-h-[100%]">
+        <div class="border-solid h-[50px] border-[#C4C4C4] w-[95%] justify-self-center border-1">
+            <p class="text-[18px] font-Lato font-semibold px-[32px] py-[12px]">Edit Profile</p>
+        </div>
+
+
+        <div class="w-[95%] min-h-[100%] flex flex-col justify-self-center bg-white border-solid border-[#00000033] border-1 ">
+            <p class="font-semibold text-[15px] font-Lato px-[32px] pt-[18px]">Account Type</p>
+            <div class="flex">
+                <div class="h-[11px] w-[11px] ml-[34px] mt-[17px] border-solid border-1 flex items-center justify-center border-[#D32323] rounded-[12px]">
+                   <div class="h-[5px] w-[5px] bg-[#D32323] rounded-[12px] "></div>
+                </div>
+                <p class="text-[15px] text-[#00000080] px-[10px] pt-[10px] font-medium font-Lato">Individual</p>
+
+                <div class="flex">
+                   <div class="h-[11px] w-[11px] ml-[34px] mt-[17px] border-solid border-1 flex items-center justify-center border-[#00000040] rounded-[12px]"></div>
+                   <p class="text-[15px] text-[#00000080] px-[10px] pt-[10px] font-medium font-Lato">Property Owner</p>
+                </div>
+                <div class="flex">
+                   <div class="h-[11px] w-[11px] ml-[34px] mt-[17px] border-solid border-1 flex items-center justify-center border-[#00000040] rounded-[12px]"></div>
+                   <p class="text-[15px] text-[#00000080] px-[10px] pt-[10px] font-medium font-Lato">Estate Agent</p>
+                </div>
+            </div>
+
+            <hr class="border-solid border-[#00000033] w-[94%] mt-[20px] mx-auto">
+
+            <div class="flex w-[100%] gap-[19px] px-4 mt-[48px]">
+                <div class="h-[170px] w-[144px] m-[27px] border border-solid rounded-[100%] border-[#00000040]"></div>
+
+                <div class="flex flex-col w-[100%] space-y-[28px]">
+                  
+                  <div class="grid grid-cols-2 md:grid-cols-2 w-[95%] gap-[19px] px-4">
+                     <div class="">  
+                        <label class="text-[13px]">Full Name</label><br>
+                        <input type="text" placeholder="Ugwu Kamsy" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                     </div>
+
+                     <div class="">  
+                        <label class="text-[13px]">Company Name</label><br>
+                        <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                     </div>
+
+
+                  </div>    
+
+                    <!-- three input section -->
+                    <div class="grid grid-cols-2 lg:grid-cols-3 w-[95%] gap-[19px] px-4">
+                    
+                      <div class="">  
+                         <label class="text-[13px]" >E-mail Address</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >Mobile 1</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >Mobile 2</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >E-mail Address 2</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >City</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >State</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                    </div>
+
+
+                    <div class="grid w-[95%] gap-[19px] px-4">
+
+                        <div class="">
+                         <label class="text-[13px]">State/Office/Address</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+                       
+                       <div class="py-4">
+                           <p class="text-[13px]">Additional Information </p>
+                           <hr class="border-solid border-[#00000033] w-[94%]">
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]">Company Websites</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                        <div class="">
+                         <label class="text-[13px]">About your company/Services</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold min-h-[230px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]">Facebook Profile</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]">Twitter Profile</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                        <div class="py-4 mb-[500px]">
+                           <p class="text-[13px] py-1">Sign In & Security</p>
+                           <hr class="border-solid border-[#00000033] w-[94%]">
+                       </div>
+
+
+                       
+                    </div>
+
+                  
+                    
+                </div>
+
+
+            </div>
+           
+                
+            
+        </div>
+
+        <button class="bg-red-700 w-[183px] h-[47px] cursor-pointer flex justify-self-center mt-[212px]">
+           <p class="text-white py-[12px] mx-auto">Save</p>
+        </button>
+        
+    </div>
+    <div class="bg-[#323E48] min-h-[325px] bg-cover flex-col lg:flex-row bg-no-repeat flex justify-between py-[20px] px-[10px]">
+        <div class="text-white pl-3">
+            <div class="flex text-[#FFFFFF] flex-wrap">
+                <img src="../images/icons/rita_cht.svg">
+                <span class="text-[24px] py-2 font-bold font-Lato">CoHomes</span>
+            </div>
+            <div class="flex flex-wrap">
+                <img src="../images/icons/rita_twit.svg">
+                <span class="text-[18px] font-400 py-2">@Thecohomes</span>
+
+            </div>
+        </div>
+        <div class="gap-[10px] md:gap-[20px] flex-col lg:flex-row flex overflow-hidden text-clip">
+            <span class="text-[16px] font-400 font-Lato text-[#EBF1EF]">
+              <p class="py-[12px] font-Lato font-bold">FAQs</p>
+              <span class=" md:block lg:flex lg:flex-col">
+                <span class="py-[7px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>About Us</u></a></span>
+                <span class="py-[7px] hover:text-blue-400 transition-colors duration-300"><a href="#"> <u>Properties</u></a></span>
+                <span class="py-[7px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Privacy Policy</u></a></span>
+                <span class="py-[7px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Terms of Use</u></a></span>
+              </span>
+            </span>
+            <span class="text-[16px] font-400 font-Lato text-[#EBF1EF]">
+              <p class="py-[12px] font-Lato font-bold">Home</p>
+              <span class=" md:block lg:flex lg:flex-col">
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Buy</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Sell</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#"> <u>Roommate</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Blog</u></a></span>
+              </span>
+            </span>
+            <span class="text-[16px] font-400 font-Lato text-[#EBF1EF]">
+              <p class="py-[12px] font-Lato font-bold">Top Cities</p>
+              <span class=" md:block lg:flex lg:flex-col">
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Abuja</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Lagos</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Enugu</u></a></span>
+              </span>
+            </span>
+            <span class="text-[16px] font-400 font-Lato text-[#EBF1EF]">
+              <p class="py-[12px] font-Lato font-bold ">Contact Us</p>
+              <span class=" md:block">
+              
+                <li class="flex flex-wrap py-1">
+                    <img src="../images/icons/rita_mesg.svg">
+                    <span class="text-[16px] font-400 font-Lato px-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer">cohomes@gmail.com</span>
+                </li>
+                <li class="flex flex-wrap py-1">
+                    <img src="../images/icons/rita_call.svg">
+                    <span class="text-[16px] font-400 font-Lato px-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer">+2347056306413</span>
+                </li>
+                <li class="flex flex-wrap py-1">
+                    <img src="../images/icons/rita_twitsmall.svg">
+                    <span class="text-[16px] font-400 font-Lato px-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer ">@Thecohomes</span>
+                </li>
+                <li class="flex flex-wrap py-1">
+                    <img src="../images/icons/rita_facebk.svg">
+                    <span class="text-[16px] font-400 font-Lato px-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer">Thecohomes</span>
+                </li>
+              </span>
+            </span>
+        </div>
+    </div>
+    <div class="h-[50px] w-[100%] bg-[#1F2430] items-center px-[76px] py-[7px] bg-cover bg-no-repeat">
+        <div class="flex flex-wrap gap-2">
+            <img class="pt-2" src="../images/icons/rita_tinyc.svg">
+            <p class="font-400 font-Lato text-[12px] text-white pt-3">2020 CoHomes.com</p>
+        </div>
+       
+    </div>
+  
+    <script>
+        const topNav = document.getElementById('topNav');
+
+       function Nav() {
+            if(topNav.className == 'hidden'){
+                topNav.style.display = 'block';
+            } else {
+                topNav.style.display = 'none';
+            }
+        }
+ 
+    </script>    
 </body>
 </html>
