@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <style>
+       [type="radio"]{
+            accent-color: #cf2b2b;
+            width: 11px;
+            height: 11px;
+        }
+    </style>
+</head>
+<body class="relative">
+    <!-- navBar in small devices -->
+    <nav class="hidden" id="top-nav">
+
+        <div class="lg:hidden fixed inset-0 bg-black opacity-[0.5] z-10"></div>
+
+        <div>
+            <div class="fixed p-5 pt-20 h-[100vh] w-[300px] sm:w-[50%] md:w-[400px] flex flex-col gap-[15px] justify-self-end z-15 bg-[#ffffff] lg:hidden">
+                <button onclick="Nav()" class="absolute rounded-full top-[10px] left-0 shadow-lg p-2 bg-white z-15 text-3xl font-bold cursor-pointer">X</button>
+                 <a class="p-5 bg-[#D32323] text-white rounded-md" href="">Home</a>
+                 <a class="p-5 bg-gray-100 rounded-md" href="">Properties</a>
+                 <a class="p-5 bg-gray-100 rounded-md" href="">Find Roommate</a>
+                 <a class="p-5 bg-gray-100 rounded-md" href="">Explore</a>
+                 <a class="p-5 bg-gray-100 rounded-md" href="">Blog</a>  
+            </div>
+
+        </div>
+    
+    </nav>
+
+    <!-- Hero section -->
+       <div class="bg-[#D32323] z-1 h-[100px] w-[100%] relative bg-cover bg-no-repeat">
+        <div class="relative z-3 flex px-[10px] pb-[20px] justify-between">
+            <div class="w-[100px] text-center py-[10px]">
+
+                <img src="../images/icons/rita_logo.svg" alt="" class="h-73px px-5">
+                <p class="font-Lato text-white text-[16px]">coHomes</p>
+
+            </div>
+           
+            <div class="text-white font-Lato font-semibold text-[16px] ">
+              
+                <div class="lg:flex hidden gap-[30px] py-[16px]">
+                 <a href="">Home</a>
+                 <a href="">Properties</a>
+                 <a href="">Find Roommate</a>
+                 <a href="">Explore</a>
+                 <a href="">Blog</a>  
+                </div>
+
+            </div>
+           
+            <div class="text-white upNav1 lg:flex hidden font-semibold text-[16px] h-[36px] my-[16px] lg:gap-2">
+                 <a class="pt-1 px-7 pb-2 border rounded-[5px]" href="">Login</a>
+                 <a class="pt-1 px-7 pb-2 border rounded-[5px] bg-[#A30000]" href="">Register</a>
+            </div>
+            <button onclick="Nav()" class="h-[36px] my-[16px] bg-red-700 rounded-[5px] lg:hidden">
+               <a class="pt-3 px-7 pb-4 border-solid font-semibold text-white" href="#">Menu</a>
+            </button>
+           
+   
+        </div>
+    </div>
+
+    <!-- Start of midNav -->
+    <div class="bg-[#ffffff] h-[60px] border-solid border border-[#C4C4C4]">
+        <div class="flex text-[18px] px-[58px] font-semibold gap-[30px] hidden lg:flex">
+             <div class="flex flex-col gap-3">
+                  <a href="" class="pt-[16px] text-[#D32323]">Account </a>  
+                  <div class="bg-[#D32323] w-[67px] rounded-[10px] h-[3px] bg-cover bg-no-repeat"></div>
+             </div>
+            
+             <a href="" class="pt-[16px] hidden lg:inline">My Listings</a>
+             <a href="" class="pt-[16px] hidden lg:inline">Saved Properties</a>
+             <a href="" class="pt-[16px] hidden lg:inline">Add Property</a>
+             <a href="" class="pt-[16px] hidden lg:inline">Account Settings</a>  
+        </div>
+        <select class="lg:hidden text-[18px] px-[58px] font-semibold mt-[16px] bg-white border-none" onchange="window.location.href = this.value;">
+            <option value="C:\Users\Chidera\Documents\PRODUCT\Cohomes\Rita\account1.html" selected><a href="" class="pt-[16px] text-[#D32323]">Account </a> </option>
+            <option value="">My Listings</option>
+            <option value="">Saved Properties</option>
+            <option value="">Add Property</option>
+            <option value="C:\Users\Chidera\Documents\PRODUCT\Cohomes\Rita\account2.html">Account Settings</option>
+        </select>
+ 
+    </div>
+
+    <!-- Main Body -->
+    <div class="bg-[#F6F8FA80] bg-cover p-10 bg-no-repeat w-[100%] min-h-[100%]">
+        <div class="border-solid h-[50px] border-[#C4C4C4] w-[98%] justify-self-center border-1">
+            <p class="text-[16px] font-Lato font-semibold px-[32px] py-[12px]">Profile</p>
+        </div>
+
+
+        <div class="w-[98%] min-h-[100%] flex flex-col justify-self-center bg-white border-solid border-[#00000033] border-1 ">
+
+
+            <p class="font-semibold text-[15px] font-Lato px-[32px] pt-[18px]">Account Type</p>
+
+            <!-- checkBox -->
+            <div class="flex flex-col lg:flex-row ">
+               <div class="flex gap-2" >
+                    <input type="radio" name="Select" class="mt-[17px] ml-[34px]" id="select">
+                    <p class="text-[13px] text-[#00000080] mt-[10px] font-medium font-Lato">Individual</p>
+               </div>
+              
+
+                <div class="flex gap-2">
+                   <input type="radio" name="Select" class="mt-[17px] ml-[34px]" id="select">
+                   <p class="text-[13px] text-[#00000080] pt-[10px] font-medium font-Lato">Property Owner</p>
+                </div>
+
+
+                <div class="flex gap-2">
+                   <input type="radio" name="Select" class="mt-[17px] ml-[34px]" id="select">
+                   <p class="text-[13px] text-[#00000080] pt-[10px] font-medium font-Lato">Estate Agent</p>
+                </div>
+            </div>
+            <hr class="border-solid border-[#00000033] w-[94%] mt-[20px] mx-auto">
+
+            <div class="flex flex-col md:flex-row w-[100%] gap-[19px] px-4 mt-[48px]">
+
+
+                <img class="w-[144px] h-[170px] block md:inline mx-auto md:mx-0 rounded-[100%]" src="../images/image_Rita.jpg">
+                 <!-- two input section -->
+
+                <div class="flex flex-col w-[100%] space-y-[28px]">
+                  <div class="grid grid-cols-1 md:grid-cols-2 w-[95%] gap-[19px] px-4">
+                     <div class="">  
+                        <label class="text-[13px]">Full Name</label><br>
+                        <input type="text" placeholder="Ugwu Kamsy" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                     </div>
+
+                     <div class="">  
+                        <label class="text-[13px]">Company Name</label><br>
+                        <input type="text" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                     </div>
+
+
+                  </div>    
+
+                    <!-- three input section -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[95%] gap-[19px] px-4">
+                    
+                      <div class="">  
+                         <label class="text-[13px]" >E-mail Address</label><br>
+                         <input type="text" placeholder="Ugwukamsy@gmail.com" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >Mobile 1</label><br>
+                         <input type="text" placeholder="090XXXXXXXX" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >Mobile 2</label><br>
+                         <input type="text" placeholder="09067886414" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >E-mail Address 2</label><br>
+                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >City</label><br>
+                         <input type="text" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]" >State</label><br>
+                         <input type="text" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                    </div>
+
+
+                    <div class="grid w-[95%] gap-[19px] px-4">
+
+                        <div class="">
+                         <label class="text-[13px]">State/Office/Address</label><br>
+                         <input type="text" placeholder="Joy Avenue Tpumpy estate ,Lugbe" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+                       
+                       <div class="py-4">
+                           <p class="text-[13px]">Additional Information </p>
+                           <hr class="border-solid border-[#00000033] w-[94%]">
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]">Company Websites</label><br>
+                         <input type="text" placeholder="e.g http://comfortproperties.com" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                        <div class="">
+                         <label class="text-[13px]">About your company/Services</label><br>
+                         <input type="text" class="text-[13px] p-[11px] font-semibold min-h-[230px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]">Facebook Profile</label><br>
+                         <input type="text" placeholder="e.g http://facebook.com/UgwuKamsy" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+
+                       <div class="">
+                         <label class="text-[13px]">Twitter Profile</label><br>
+                         <input type="text" placeholder="e.g http://twitter.com/UgwuKamsy" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                       </div>
+                    </div>
+
+                  <button class="bg-red-700 w-[183px] cursor-pointer h-[47px] mx-auto mb-[212px]">
+                      <p class="text-white">Back</p>
+                  </button>
+
+                    
+                </div>
+           </div>
+
+           
+        </div>
+        
+    </div>
+        <div class="bg-[#323E48] min-h-[325px] bg-cover flex-col lg:flex-row bg-no-repeat flex justify-between py-[20px] px-[10px]">
+        <div class="text-white pl-3">
+            <div class="flex text-[#FFFFFF] flex-wrap">
+                <img src="../images/icons/rita_cht.svg">
+                <span class="text-[24px] py-2 font-bold font-Lato">CoHomes</span>
+            </div>
+            <div class="flex flex-wrap">
+                <img src="../images/icons/rita_twit.svg">
+                <span class="text-[18px] font-400 py-2">@Thecohomes</span>
+
+            </div>
+        </div>
+        <div class="gap-[10px] md:gap-[20px] flex-col lg:flex-row flex overflow-hidden text-clip">
+            <span class="text-[16px] font-400 font-Lato text-[#EBF1EF]">
+              <p class="py-[12px] font-Lato font-bold">FAQs</p>
+              <span class=" md:block lg:flex lg:flex-col">
+                <span class="py-[7px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>About Us</u></a></span>
+                <span class="py-[7px] hover:text-blue-400 transition-colors duration-300"><a href="#"> <u>Properties</u></a></span>
+                <span class="py-[7px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Privacy Policy</u></a></span>
+                <span class="py-[7px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Terms of Use</u></a></span>
+              </span>
+            </span>
+            <span class="text-[16px] font-400 font-Lato text-[#EBF1EF]">
+              <p class="py-[12px] font-Lato font-bold">Home</p>
+              <span class=" md:block lg:flex lg:flex-col">
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Buy</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Sell</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#"> <u>Roommate</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Blog</u></a></span>
+              </span>
+            </span>
+            <span class="text-[16px] font-400 font-Lato text-[#EBF1EF]">
+              <p class="py-[12px] font-Lato font-bold">Top Cities</p>
+              <span class=" md:block lg:flex lg:flex-col">
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Abuja</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Lagos</u></a></span>
+                <span class="py-[5px] hover:text-blue-400 transition-colors duration-300"><a href="#" ><u>Enugu</u></a></span>
+              </span>
+            </span>
+            <span class="text-[16px] font-400 font-Lato text-[#EBF1EF]">
+              <p class="py-[12px] font-Lato font-bold ">Contact Us</p>
+              <span class=" md:block">
+              
+                <li class="flex flex-wrap py-1">
+                    <img src="../images/icons/rita_mesg.svg">
+                    <span class="text-[16px] font-400 font-Lato px-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer">cohomes@gmail.com</span>
+                </li>
+                <li class="flex flex-wrap py-1">
+                    <img src="../images/icons/rita_call.svg">
+                    <span class="text-[16px] font-400 font-Lato px-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer">+2347056306413</span>
+                </li>
+                <li class="flex flex-wrap py-1">
+                    <img src="../images/icons/rita_twitsmall.svg">
+                    <span class="text-[16px] font-400 font-Lato px-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer ">@Thecohomes</span>
+                </li>
+                <li class="flex flex-wrap py-1">
+                    <img src="../images/icons/rita_facebk.svg">
+                    <span class="text-[16px] font-400 font-Lato px-2 hover:text-blue-400 transition-colors duration-300 cursor-pointer">Thecohomes</span>
+                </li>
+              </span>
+            </span>
+        </div>
+    </div>
+    <div class="h-[50px] w-[100%] bg-[#1F2430] items-center px-[76px] py-[7px] bg-cover bg-no-repeat">
+        <div class="flex flex-wrap gap-2">
+            <img class="pt-2" src="../images/icons/rita_tinyc.svg">
+            <p class="font-400 font-Lato text-[12px] text-white pt-3">2020 CoHomes.com</p>
+        </div>
+       
+    </div>
+  
+    <script>
+        const topNav = document.getElementById('top-nav');
+
+       function Nav() {
+         topNav.classList.toggle("hidden");
+        }
+ 
+    </script>    
+</body>
+</html>
