@@ -34,15 +34,15 @@
     </nav>
 
     <!-- Hero section -->
-    <div class="bg-[#D32323] z-1 h-[100px] w-[100%] relative bg-cover bg-no-repeat p-2">
-        <div class="relative z-3 flex justify-between">
+       <div class="bg-[#D32323] z-1 h-[100px] w-[100%] relative bg-cover bg-no-repeat">
+        <div class="relative z-3 flex px-[10px] pb-[20px] justify-between">
             <div class="w-[100px] text-center py-[10px]">
 
                 <img src="../images/icons/rita_logo.svg" alt="" class="h-73px px-5">
-                <p class="font-Lato text-white text-[16px] pb-2">coHomes</p>
+                <p class="font-Lato text-white text-[16px]">coHomes</p>
 
             </div>
-           <!-- Top Nav Large devices -->
+           
             <div class="text-white font-Lato font-semibold text-[16px] ">
               
                 <div class="lg:flex hidden gap-[30px] py-[16px]">
@@ -54,21 +54,19 @@
                 </div>
 
             </div>
-
-            <!-- button to activate nav for small devices -->
-            <button onclick="Nav()" class="h-[36px] my-[16px] bg-red-700 rounded-[5px] lg:hidden">
-               <span class="pt-3 px-7 pb-4 border-solid font-semibold text-white cursor-pointer">Menu</span>
-            </button>
            
-            <!-- L&G BUTTONS -->
             <div class="text-white upNav1 lg:flex hidden font-semibold text-[16px] h-[36px] my-[16px] lg:gap-2">
                  <a class="pt-1 px-7 pb-2 border rounded-[5px]" href="">Login</a>
                  <a class="pt-1 px-7 pb-2 border rounded-[5px] bg-[#A30000]" href="">Register</a>
             </div>
-
-          
+            <button onclick="Nav()" class="h-[36px] my-[16px] bg-red-700 rounded-[5px] lg:hidden">
+               <a class="pt-3 px-7 pb-4 border-solid font-semibold text-white" href="#">Menu</a>
+            </button>
+           
+   
         </div>
     </div>
+
     <!-- Start of midNav -->
     <div class="bg-[#ffffff] h-[60px] border-solid border border-[#C4C4C4]">
         <div class="flex text-[18px] px-[58px] font-semibold gap-[30px] hidden lg:flex">
@@ -105,32 +103,34 @@
             <p class="font-semibold text-[15px] font-Lato px-[32px] pt-[18px]">Account Type</p>
 
             <!-- checkBox -->
-            <div class="flex">
+            <div class="flex flex-col lg:flex-row ">
                <div class="flex gap-2" >
-                    <input type="radio" name="Select" class="mt-[17px] ml-[20%] ml-[34px]" id="select">
+                    <input type="radio" name="Select" class="mt-[17px] ml-[34px]" id="select">
                     <p class="text-[13px] text-[#00000080] mt-[10px] font-medium font-Lato">Individual</p>
                </div>
               
 
                 <div class="flex gap-2">
-                   <input type="radio" name="Select" class="mt-[17px] ml-[20%] ml-[34px]" id="select">
-                   <p class="text-[13px] text-[#00000080] px-[10px] pt-[10px] font-medium font-Lato">Property Owner</p>
+                   <input type="radio" name="Select" class="mt-[17px] ml-[34px]" id="select">
+                   <p class="text-[13px] text-[#00000080] pt-[10px] font-medium font-Lato">Property Owner</p>
                 </div>
+
+
                 <div class="flex gap-2">
-                   <input type="radio" name="Select" class="mt-[17px] ml-[20%] md:ml-[34px]" id="select">
-                   <p class="text-[13px] text-[#00000080] px-[10px] pt-[10px] font-medium font-Lato">Estate Agent</p>
+                   <input type="radio" name="Select" class="mt-[17px] ml-[34px]" id="select">
+                   <p class="text-[13px] text-[#00000080] pt-[10px] font-medium font-Lato">Estate Agent</p>
                 </div>
             </div>
             <hr class="border-solid border-[#00000033] w-[94%] mt-[20px] mx-auto">
 
-            <div class="flex w-[100%] gap-[19px] px-4 mt-[48px]">
+            <div class="flex flex-col md:flex-row w-[100%] gap-[19px] px-4 mt-[48px]">
 
 
-                <img class="w-[144px] h-[170px] rounded-[100%]" src="../images/image_Rita.jpg">
+                <img class="w-[144px] h-[170px] block md:inline mx-auto md:mx-0 rounded-[100%]" src="../images/image_Rita.jpg">
                  <!-- two input section -->
 
                 <div class="flex flex-col w-[100%] space-y-[28px]">
-                  <div class="grid grid-cols-2 md:grid-cols-2 w-[95%] gap-[19px] px-4">
+                  <div class="grid grid-cols-1 md:grid-cols-2 w-[95%] gap-[19px] px-4">
                      <div class="">  
                         <label class="text-[13px]">Full Name</label><br>
                         <input type="text" placeholder="Ugwu Kamsy" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
@@ -138,28 +138,28 @@
 
                      <div class="">  
                         <label class="text-[13px]">Company Name</label><br>
-                        <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                        <input type="text" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                      </div>
 
 
                   </div>    
 
                     <!-- three input section -->
-                    <div class="grid grid-cols-2 lg:grid-cols-3 w-[95%] gap-[19px] px-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[95%] gap-[19px] px-4">
                     
                       <div class="">  
                          <label class="text-[13px]" >E-mail Address</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" placeholder="Ugwukamsy@gmail.com" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
 
                        <div class="">
                          <label class="text-[13px]" >Mobile 1</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" placeholder="090XXXXXXXX" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
 
                        <div class="">
                          <label class="text-[13px]" >Mobile 2</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" placeholder="09067886414" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
 
                        <div class="">
@@ -169,12 +169,12 @@
 
                        <div class="">
                          <label class="text-[13px]" >City</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
 
                        <div class="">
                          <label class="text-[13px]" >State</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
 
                     </div>
@@ -184,7 +184,7 @@
 
                         <div class="">
                          <label class="text-[13px]">State/Office/Address</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" placeholder="Joy Avenue Tpumpy estate ,Lugbe" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
                        
                        <div class="py-4">
@@ -194,22 +194,22 @@
 
                        <div class="">
                          <label class="text-[13px]">Company Websites</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" placeholder="e.g http://comfortproperties.com" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
 
                         <div class="">
                          <label class="text-[13px]">About your company/Services</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold min-h-[230px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" class="text-[13px] p-[11px] font-semibold min-h-[230px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
 
                        <div class="">
                          <label class="text-[13px]">Facebook Profile</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" placeholder="e.g http://facebook.com/UgwuKamsy" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
 
                        <div class="">
                          <label class="text-[13px]">Twitter Profile</label><br>
-                         <input type="text" class="text-[15px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
+                         <input type="text" placeholder="e.g http://twitter.com/UgwuKamsy" class="text-[13px] p-[11px] font-semibold max-h-[40px] w-[100%] border-1 border-solid border-[#00000033]" >
                        </div>
                     </div>
 
